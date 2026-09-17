@@ -3,15 +3,19 @@ import os
 os.system('cls')
 
 print('Combustível | 	Quantidade Vendida	|Desconto por Litro')
-print('Álcool      |   Até 25 litros	    |       10%')
-print('Álcool	   |  Acima de 25 litros	|       20%')
-print('Gasolina	   |    Até 25 litros	    |       15%')
-print('Gasolina	   |  Acima de 25 litros    |    	30%')
+print('Álcool      |   Até 25 litros	      |     10%')
+print('Álcool	     |  Acima de 25 litros	  |     20%')
+print('Gasolina	   |    Até 25 litros	      |     15%')
+print('Gasolina	   |  Acima de 25 litros    |     30%')
 
 Combustivel = str(input('digite (A) para alcool e (G) para gasolina. '))
-litros = int(input('digite quantos litros deseja'))
+litros = int(input('digite quantos litros deseja. '))
 valor_alcool = 3.78
 valor_gasolina = 6.59
 
-math combustivel:
+match combustivel:
+  case `A`
+    valorA = valor_alcool * litros
+    if litros <= 25:
+      print (f'valor a pagar no alcool: {valorA :
 
