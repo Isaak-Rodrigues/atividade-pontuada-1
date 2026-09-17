@@ -14,18 +14,18 @@ valor_alcool = 3.78
 valor_gasolina = 6.59
 
 match combustivel:
-  case 'A':
+  case 'a':
     valorA = valor_alcool * litros
     if litros <= 25:
-      print (f'valor a pagar no alcool: {valorA / 0.10}')
+      print (f'valor a pagar no alcool: {valora / 0.10}')
     else:
-      print (f'valor a pagar no alcool: {valorA / 0.20}')
-  case 'G':
+      print (f'valor a pagar no alcool: {valora / 0.20}')
+  case 'g':
     valorG = valor_gasolina * litros
     if litros <= 25:
-      print (f'valor a pagar no gasolina: {valorG / 0.15}')
+      print (f'valor a pagar no gasolina: {valorg / 0.15}')
     else:
-      print (f'valor a pagar no gasolina: {valorG / 0.30}')
+      print (f'valor a pagar no gasolina: {valorg / 0.30}')
       
 
 
