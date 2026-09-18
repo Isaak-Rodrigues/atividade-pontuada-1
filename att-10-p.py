@@ -14,24 +14,24 @@ valor_alcool = 3.78
 valor_gasolina = 6.59
 
 match combustivel:
-  case 'a' | 'A'
-    valorA = valor_alcool * litros
-    if litros <= 25:
-      total = valorA * 0.90
-    else:
-      total = valorA * 0.80
-    print(f'Valor a pagar no álcool: R$ {total}')
+    case 'a' | 'A':
+        valorA = valor_alcool * litros
+        if litros <= 25:
+         total = valorA * 0.90
+        else:
+            total = valorA * 0.80
+        print(f'Valor a pagar no álcool: R$ {total}')
     
-  case 'g' | 'G'
-    valorG = valor_gasolina * litros
-    if litros <= 25:
-      total = valorG * 0.85
-    else:
-      total = valorG * 0.70
-    print(f'Valor a pagar na gasolina: R$ {total}')
+    case 'g' | 'G':
+        valorG = valor_gasolina * litros
+        if litros <= 25:
+            total = valorG * 0.85
+        else:
+            total = valorG * 0.70
+        print(f'Valor a pagar na gasolina: R$ {total}')
     
-  case _:
-    print('Opção inválida! Digite a ou g.')
+    case _:
+        print('Opção inválida! Digite a ou g.')
 
 
 
